@@ -3,9 +3,8 @@ Color Time
 ==========
 ## *A passive-agressive tool to tell the speaker it is time to stop talking*
 
-<center>
-    <img src="pictures/colorTime.jpg" width="300">
-</center>
+<img src="pictures/colorTime.jpg" width="300" style="display: block; margin-left: auto; margin-right: auto;">
+
 
 
 
