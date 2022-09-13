@@ -59,6 +59,8 @@ You can keep the Pico in place with one drop of glue gun in the corners of the b
 
 ![image](pictures/assembly_1.jpg)
 
+Place a piece of paper (to prevent short circuit) on top of the Pico board and put the HC-05 on top of it.
+
 ![image](pictures/assembly_2.jpg)
 
 ### 3.5 Final assembly
