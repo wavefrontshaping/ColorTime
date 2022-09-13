@@ -3,6 +3,12 @@ Color Time
 ==========
 ## *A passive-agressive tool to tell the speaker it is time to stop talking*
 
+<center>
+    <img src="pictures/colorTime.jpg" width="300">
+</center>
+
+
+
 ## Table of Content
 1. [What is it?](#what)
 2. [How does it work?](#how)
@@ -17,7 +23,7 @@ designed to be placed between the speaker and the audience,
 that indicates using a color coded light how much time they have left. 
 It also signals the time for question and the end of the allotted time with color flashes.
 
-<img src="pictures/presentation.png"  width="700">
+<img src="pictures/presentation.png"  width="900">
 
 ## 2. How does it work? <a name="how"></a>
 
@@ -57,11 +63,13 @@ Ideally, make it so the button sticks out a little bit.
 This way, you can press directly on the white dome to press the button. 
 
 
+<img src="pictures/button.jpg"  width="600">
+
 ### 3.5 LEDs
 Simply follow the tutorial [here](https://www.make-it.ca/ws2812-neopixel-ring-to-attiny85/) for soldering the different rings. 
 Then solder the `DI` digital input to `GP20`. Use `VBUS` (usb power) for `Vcc` and any `GND` pin for ground.
 
-<img src="pictures/pinoutLEDs.png"  width="400">
+<img src="pictures/pinoutLEDs.png"  width="500">
 
 
 ### 3.6 Blueooth [optional]
