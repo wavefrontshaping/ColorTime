@@ -32,9 +32,14 @@ The device can be controlled using a push button by directly pressing on the dev
 * 1x HC-05 (or HC-06) Bluetooth board [Optional]
 * White and black (or colored) PLA for 3d printed parts
 
-### 3.2 Assembly
+### 3.2 3d-printed parts
 
-### 3.3 Button
+150 micron resolution is good enough. 
+For the top part, use can use a translucent plastic but using white is good enough as light witll still go through given the thickness of the shell.
+
+### 3.3 Assembly
+
+### 3.4 Button
 
 ![image](pictures/pushbutton.png)
 
@@ -48,14 +53,14 @@ Ideally, make it so the button sticks out a little bit.
 This way, you can press directly on the white dome to press the button. 
 
 
-#### LEDs
+### 3.5 LEDs
 Simply follow the tutorial [here](https://www.make-it.ca/ws2812-neopixel-ring-to-attiny85/) for soldering the different rings. 
 Then solder the `DI` digital input to `GP20`. Use `VBUS` (usb power) for `Vcc` and any `GND` pin for ground.
 
 <img src="pictures/pinoutLEDs.png"  width="400">
 
 
-### 3.4 Blueooth [optional]
+### 3.6 Blueooth [optional]
 
 Once every thing soldered, place the Pico board so that the 
 micro-usb socket is properly in place. 
@@ -68,7 +73,7 @@ Place a piece of paper (to prevent short circuit) on top of the Pico board and p
 
 ![image](pictures/assembly_2.jpg)
 
-### 3.5 Final assembly
+### 3.7 Final assembly
 
 Use a glue gun to keep the LEDs in place and final snap the top white dome onto the base. 
 And you are done!
