@@ -34,6 +34,8 @@ Then solder the DI digital input to GPIO 20. Use VBUS (usb power) for VCC and an
 
 <img src="pictures/pinoutLEDs.png"  width="300">
 
+![image](pictures/pinoutLEDs.png)
+
 ### Blueooth [optional]
 
 Once every thing soldered, place the pico board so that the 
@@ -41,13 +43,37 @@ micro-usb socket is propery in place.
 You should be able to plug a power cord without moving the board.
 You can keep the Pico in place with one drop of glue gun in the corners of the board.
 
-<img src="pictures/assembly_1.jpg"  width="400">
+![image](pictures/assembly_1.jpg)
 
-<img src="pictures/assembly_2.jpg"  width="400">
+![image](pictures/assembly_2.jpg)
 
 ### Final assembly
 
 Use a glue gun to keep the leds in place and final snap the top white dome onto the base. 
 And you are done!
 
-![image](pictures/assembly_2.jpg)
+## Usage
+
+
+### Button commands
+### Bluetooth communication
+
+Communication is done using ASCII text message over a serial protocol. 
+
+#### Commands
+Commands are the following:
+* `START`: start the countdown,
+* `PAUSE`: pause the countdown, 
+* `RESUME`: resume the countdown after pause,
+* `STOP`: stop the countdown and swith of the LEDs
+* `T{X}`: specify the time (in minutes) for a countdown and starts it, 
+for instance T20 sets a countdonw for a 20-minute talk,
+* `C{X}`: change the remaining time to `X` minutes.
+
+#### Android phone
+
+Download and install [Serial Bluetooth Terminal](https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal). 
+Use the serial terminal to send commands or use buttons. 
+To configure a button, long press on it, give it a name and set the commands. This is how it looks like:
+
+![image](pictures/android.png)
