@@ -17,12 +17,16 @@ designed to be placed between the speaker and the audience,
 that indicates using a color coded light how much time they have left. 
 It also signals the time for question and the end of the allotted time with color flashes.
 
+<img src="pictures/presentation.png"  width="700">
+
 ## 2. How does it work? <a name="how"></a>
 
 Once started and set up, the light of the device will gradually change from green to red during the time of the talk. 
 It will also signal the time for questions with few red flashes and then will flash blue and red at the end of the talk to tell the speaker and chairman that the time is up. 
 
 The device can be controlled using a push button by directly pressing on the device and/or using bluetooth with a smartphone.
+
+![video](pictures/video.webp)
 
 ## 3. Build it <a name="build"></a>
 ### 3.1 Bill of materials
@@ -35,7 +39,7 @@ The device can be controlled using a push button by directly pressing on the dev
 ### 3.2 3d-printed parts
 
 150 micron resolution is good enough. 
-For the top part, use can use a translucent plastic but using white is good enough as light witll still go through given the thickness of the shell.
+For the top part, use can use a translucent plastic but using white is good enough as light will still go through given the thickness of the shell.
 
 ### 3.3 Assembly
 
@@ -138,4 +142,4 @@ Additionally, the device will send information about the time left before the qu
 
 * Idea: Fabrice Lemoult
 * Design: Sébastien M. Popoff
-* Tests: Sébastien M. Popoff, Romain Pierrat and F. Lemoult
+* Tests: Sébastien M. Popoff, Romain Pierrat, and F. Lemoult
