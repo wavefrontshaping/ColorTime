@@ -1,6 +1,7 @@
 
 Color Time
 ==========
+## *A passive-agressive tool to tell the speaker it is time to stop talking*
 
 ## Table of Content
 1. [What is it?](#what)
@@ -18,6 +19,8 @@ It also signals the time for question and the end of the allotted time with colo
 
 ## 2. How does it work? <a name="how"></a>
 
+Once started and set up, the light of the device will gradually change from green to red during the time of the talk. 
+It will also signal the time for questions with few red flashes and then will flash blue and red at the end of the talk to tell the speaker and chairman that the time is up.
 
 ## 3. Build it <a name="build"></a>
 ### 3.1 Bill of materials
@@ -128,4 +131,4 @@ Additionally, the device will send information about the time left before the qu
 
 * Idea: Fabrice Lemoult
 * Design: Sébastien M. Popoff
-* Tets: Sébastien M. Popoff, Romain Pierrat and F. Lemoult
+* Tests: Sébastien M. Popoff, Romain Pierrat and F. Lemoult
