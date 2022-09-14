@@ -3,7 +3,7 @@ Color Time
 ==========
 ## *A passive-agressive tool to tell the speaker it is time to stop talking*
 
-<img src="pictures/colorTime.jpg" width="300" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="pictures/colorTime.jpg" width="300">
 
 
 
@@ -137,8 +137,15 @@ for instance `T20` sets a countdown for a 20-minute talk,
 
 #### Android phone
 
-Download and install [Serial Bluetooth Terminal](https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal). 
-Use the serial terminal to send commands or use buttons. 
+
+First enable Bluetooth on your smartphone and pair with the device. 
+It should be called HC-05 (or HC-06) and the pin code is `0000` or `1234`. 
+
+Then download and install [Serial Bluetooth Terminal](https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal). 
+In the app, go to the `Devices` section the top left menu and select the HC-05 device. 
+In the `Terminal` section, use the top left icon to initialize the connection.
+
+You can now the serial terminal to send commands or use buttons. 
 To configure a button, long press on it, give it a name and set the commands. This is how it looks like:
 
 ![image](pictures/android.png)
