@@ -152,7 +152,7 @@ To configure a button, long press on it, give it a name and set the commands. Th
 
 Additionally, the device will send information about the time left before the questions and before the end of the talk.
 
-## Credits
+## 5. Credits
 
 * Idea: Fabrice Lemoult
 * Design: Sébastien M. Popoff
