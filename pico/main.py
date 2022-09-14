@@ -13,7 +13,7 @@ light_red = (127,0,0)
 state_time = [0.33,90,60,20] # in minutes
 state_colors = (light_green, light_blue, light_orange, light_red)
 nb_states = len(state_time)
-tick_time = .5 #seconds
+tick_time = 1. #seconds
 
 # Configure led disk
 led_pin = 22
@@ -117,8 +117,9 @@ def get_bt_message(data):
     if msg[0] == 'C':
         try:
             # change time left
-            time_left = int(msg[1:])
-            t0 = tmax-time_left*60*1000
+            time_left = int(msg[1:])*60*1000
+            shift = tmax-ticks_ms()+t0-time_left
+            t0 -= shift
         except:
             pass
     elif msg == 'START':
@@ -183,8 +184,9 @@ async def main():
             if time>tmax-t_question:
                 if not FLAG_QUESTION:
                     leds.Blink(RED, timeout = 4_000, brightness = BRIGHTNESS_FLASH)
-                FLAG_QUESTION = True
-            leds.Step(time/tmax, BRIGHTNESS_MIN, BRIGHTNESS_MAX)
+                    FLAG_QUESTION = True
+                leds.Step(1., BRIGHTNESS_MIN, BRIGHTNESS_MAX)
+            leds.Step(time/(tmax-t_question), BRIGHTNESS_MIN, BRIGHTNESS_MAX)
             if time > tmax:
                 print('Stop')
                 leds.Flash(timeout = T_FLASH, brightness = BRIGHTNESS_FLASH)
@@ -200,4 +202,3 @@ try:
     asyncio.run(main())
 finally:
     asyncio.new_event_loop()
-
